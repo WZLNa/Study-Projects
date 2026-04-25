@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>0414表单作业</title>
+        <style>
+            .container{
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h1{
+                background-color: aliceblue;
+                text-align: center;
+                height: 130px;
+                margin:5px;
+            }
+            .containerh{
+                background-color: antiquewhite;
+                height: 80px;
+                display: flex;
+                align-items: center;
+            }
+            .containerh h2 {
+                margin: 0; /* ⚠️ 清除 h2 默认的上下 margin */
+                padding-left: 20px; /* 增加一点左侧内边距，避免文字紧贴边缘 */
+            }
+
+            .containerf{
+                background-color: antiquewhite;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center; /* 添加水平居中 */
+            }
+            .containerf p {
+                margin: 0; /* 清除 p 标签默认的外边距，确保完美垂直居中 */
+            }
+
+            .form-container {
+                display: flex;
+                justify-content: center; /* 让表单整体居中 */
+                padding-top: 20px;
+                background-color: gainsboro;
+                /* 不设置高度，让表单自然撑开 */
+            }
+        </style>
+        <header>
+        <h1 class="container">
+            abc论坛
+        </h1>
+        </header>
+    </head>
+    <body>
+        <div class="containerh">
+            <h2> 个人资料维护</h2>
+        </div>
+
+        <div class="form-container">
+            <form action="case3-1列表.html" method="post" name="form1" enctype="multipart/form-data" style="background-color:gray">
+                用户名：<input type="text" name="name" value="Milly" readonly><br>
+                性别：
+                <input type="radio" name="gender" value="man">男
+                <input type="radio" name="gender" value="woman">女
+                <br>
+                个人网址：<input type="text" name="website"><br>
+                出生日期：<input type="date" name="birthday"><br>
+                喜欢的颜色：<input type="color" name="color"><br>
+                <div style="display: flex; align-items: center; margin-top: 5px;">
+                    <span>上传美照：</span>
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <img src="../chapter02/1.png" style="width: 60px; height: 60px;">
+                        <input type="file" name="avatar" id="">
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 15px; gap: 30px;">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                    <a href="#1">跳转</a>
+                </div>
+            </form>
+        </div>
+
+        <footer class="containerf">
+            <p>Copyright © 2026 WZLN. All Rights Reserved</p>
+        </footer>
+    </body>

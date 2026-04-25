@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .f1{
+                width:300px;
+                height:300px;
+                padding:20px;
+                border:10px solid black;
+                margin:10px;
+                background-color:pink;
+                box-sizing: border-box;
+            }
+             .f2{
+                width:300px;
+                height:300px;
+                padding:20px;
+                border:10px solid black;
+                margin:10px;
+                background-color:pink;
+                box-sizing: content-box;
+            }
+             .div1{
+                width:100px;
+                height:100px;
+                padding:5px;
+                border:5px solid black;
+                margin:10px;
+                background-color:pink;
+             }
+        </style>
+    <!--块元素中可以有行内元素
+        行内元素中不能有块元素
+        盒子模型：
+            包括：外边距、边框、内边距以及元素的内容
+        盒子模型的计算方式：
+        box-sizing:border-box
+        计算方法：
+        宽度：左右外边距+宽（宽中包含左右边框和左右外边距）
+        高度：上下外边距+高（高中包含上下外边距和上下内边距）
+
+        box-sizing:content-box（默认采用这种盒子模型的计算方式）
+        计算方法：
+        宽度：左右外边距+左右边框+左右内边距+宽
+        高度：上下外边距+上下边框+上下内边距+高
+        -->
+    <body>
+        <div class="f1">
+            <div class="div1">我是块元素</div>
+            <div class="div1">我是块元素2</div>
+        </div>
+        <div class="f2">
+            <div class="div1">我是块元素3</div>
+            <div class="div1">我是块元素4</div>
+        </div>
+    </body>
+    </head>

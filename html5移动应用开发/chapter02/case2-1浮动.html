@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            margin:15px;
+            padding:10px;
+        } */
+        .box1{
+            background-color: pink;
+            height:150px;
+            clear:both;
+        }
+        .box2{
+            background-color: blue;
+            float:left;
+            height:530px;
+            width:30%;
+        }
+        .box3{
+            background-color: purple;
+            float:right;
+            height:530px;
+            width:70%;
+        }
+        .box4{
+            background-color: green;
+            height:90px;
+            clear:both;
+            text-align:center;
+        }
+        .content{
+            width:1300px;
+            margin:0 auto;/* 给快元素实现水平居中效果*/
+            border:2px solid red;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<!-- shift+alt+向下箭头 复制一行代码
+    ctrl+alt+向下箭头 出现多个光标 按住alt键点击想要出现光标的位置
+    左浮动:脱离标准流，左浮动的元素会挨着上面设置了左浮动的元素在它的右边显示，如果之前没有左浮动的元素，就会挨着父元素的左边缘显示
+    右浮动:脱离标准流，右浮动的元素会挨着上面设置了右浮动的元素在它的左边显示，如果之前没有右浮动的元素，就会挨着父元素的右边缘显示
+    清除浮动的方法:clear:both
+    解决由于子元素，造成父元素高度为0(高度坍塌)的问题:
+        第一种:给父元素添加高度
+        第二种:给父元素使用overflow:hidden
+ -->
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+</body>
+</html>

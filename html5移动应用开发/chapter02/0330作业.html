@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+  <meta charset="UTF-8">
+  <title>2.5 定位作业</title>
+  <style>
+        .father{
+            border:1px solid red;
+            position: relative;
+            display: flex; /* 启用弹性布局 */
+            justify-content: center; /* 主轴(水平)居中 */
+            align-items: center; /* 交叉轴(垂直)居中 */
+        }
+        .button {
+            width: 30px; /* 设置按钮的宽度 */
+            height: 30px; /* 设置按钮的高度，与宽度相同 */
+            border-radius: 50%; /* 设置边框圆角为50%，产生圆形效果 */
+            border:gold; /* 移除边框 */
+            background-color: darkgray; /* 设置按钮的背景颜色 */
+            color: white; /* 设置按钮内文字的颜色 */
+            text-align: center; /* 文字居中显示 */
+            line-height: 30px; /* 设置行高与按钮高度相同，使文字垂直居中 */
+            cursor: pointer; /* 鼠标悬停时显示指针形状 */
+            }
+        .button-container{
+            position: absolute;
+            top: 95%; /*将元素左上角定位到父容器中心 */
+            left: 50%; /*将元素左上角定位到父容器中心*/
+            transform: translate(-50%, -50%); /*将元素向左上方平移自身宽高的50%，使元素中心与父容器中心重合*/
+            display: flex;
+            gap: 10px; /* 按钮之间的间距 */
+        }
+
+        .nav-button {
+            position: absolute; /* 绝对定位 */
+            top: 50%; /* 垂直位置居中 */
+            transform: translateY(-50%); /* 垂直居中调整 */
+            width: 50px; /* 按钮宽度 */
+            height: 50px; /* 按钮高度 */
+            border-radius: 50%; /* 圆形按钮 */
+            border: none; /* 无边框 */
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+            color: white; /* 白色文字 */
+            font-size: 20px; /* 字体大小 */
+            font-weight: bold; /* 粗体 */
+            cursor: pointer; /* 鼠标悬停时显示指针 */
+            display: flex; /* 弹性布局 */
+            align-items: center; /* 垂直居中 */
+            justify-content: center; /* 水平居中 */
+            transition: background-color 0.3s ease; /* 背景色过渡效果 */
+        }
+        
+        .nav-button:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* 鼠标悬停时背景色变深 */
+        }
+        
+        .nav-button.left {
+            left: 20px; /* 左侧按钮位置 */
+        }
+        
+        .nav-button.right {
+            right: 20px; /* 右侧按钮位置 */
+        }
+  </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">2.5 定位作业</h1>
+    <div class="father">
+        <img id="img1" src="../demo_pic.jpg" alt="" style="height: 700px;width: 1100px;">
+        <img id="img2" src="https://www.wzln.top/beijing.jpg" alt="" style="height: 700px;width: 1100px; display: none;">
+        <img id="img3" src="https://bing.img.run/1920x1080.php" alt="" style="height: 700px;width: 1100px; display: none;">
+        <img id="img4" src="https://setu.iw233.top/large/ec43126fgy1i8q4x6i0wjj23gv0sx7ht.jpg" alt="" style="height: 700px;width: 1100px; display: none;">
+        <!--  -->
+        <button class="nav-button left" onclick="changeImage(-1)">←</button>
+        <button class="nav-button right" onclick="changeImage(1)">→</button>
+        <!--  -->
+        <div class="button-container">
+            <button class="button" onclick="showImage(0)">1</button>
+            <button class="button" onclick="showImage(1)">2</button>
+            <button class="button" onclick="showImage(2)">3</button>
+            <button class="button" onclick="showImage(3)">4</button>
+        </div>
+    </div>
+
+<script>
+    let currentImage = 0;
+    const images = [document.getElementById('img1'), document.getElementById('img2'), 
+                    document.getElementById('img3'), document.getElementById('img4')];
+    
+    function showImage(index) {
+        // 隐藏所有图片
+        images.forEach(img => img.style.display = 'none');
+        // 显示选中的图片
+        images[index].style.display = 'block';
+        currentImage = index;
+    }
+    
+    function changeImage(direction) {
+        currentImage = (currentImage + direction + images.length) % images.length;
+        showImage(currentImage);
+    }
+</script>
+
+</body>
+</html>
