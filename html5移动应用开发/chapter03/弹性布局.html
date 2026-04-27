@@ -1,0 +1,47 @@
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        <!-- 1.弹性布局
+         使用弹性布局:给父容器添加弹性布局
+         display:flex
+         flex:direction:元素的排列方式 column:垂直排列 row:水平排列(默认值)
+         flex-wrap 子元素超出父容器后是否自动换行    
+         flex-wrap:nowrap(默认值不换行)   wrap 换行
+        
+         justify-content:子元素在主轴上的对齐方式  交叉轴
+                flex-start (默认值,整体居主轴开始的位置)
+                flex-end 整体居主轴结束的位置
+                center 整体居主轴中心的位置
+                space-between 两端对齐
+                space-around 均匀排列,但是每个元素周围会分配相同的空间
+        -->
+        <style>
+            .container{
+                width:400px;
+                height:400px;
+                background-color: #eee;
+                display:flex;
+                flex-direction: row;
+                flex-wrap:wrap;
+                justify-content: space-around;
+            }
+            .item{
+                width:80px;
+                height:80px;
+                background-color: #404040;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </body>
+</html>

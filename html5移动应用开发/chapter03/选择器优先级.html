@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+
+
+<!-- 
+选择器的优先级
+行内式>ID选择器>类选择器>标签选择器>从父元素那继承过来的样式
+
+样式继承性:父元素的样式可以被子元素继承
+-->
+
+    <style>
+        body{
+        color:brown
+        }
+        .box{
+            color:red
+        }
+        div{
+            color:green
+        }
+        #box{
+            color:blue
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box">你好 <span>小明</span></div>
+    </body>
+</html>
