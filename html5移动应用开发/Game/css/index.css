@@ -1,0 +1,61 @@
+/* 清除默认样式 */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header-section{
+    height:80px;
+    background-color: #131313;
+    border-bottom: 1px solid #ffb320;
+}
+.header-section .container{
+    width:1200px;
+    margin:0 auto;
+    border:1px solid red;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.site-logo{
+    padding-top: 6px;
+}
+
+/* 导航设置 */
+.main-menu{
+    margin-right: 100px;
+}
+
+.main-menu ul{
+    list-style:none;
+}
+
+.main-menu ul li{
+    float: left;
+}
+
+.main-menu ul li a {
+    display:inline-block;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 35px;
+    font-weight: 600;
+    padding: 10px 5px;
+}
+
+.main-menu ul li a:hover{
+    color:#ffb320;
+}
+
+.user-panel{
+    font-weight:500;
+    background-color: #ffb320;
+    padding:8px 28px;
+    border-radius: 30px;
+}
+
+.user-panel a{
+    font-size:14px;
+    color:#131313;
+    font-weight: 600;
+}
