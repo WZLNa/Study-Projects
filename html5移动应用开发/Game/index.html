@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入CSS外部样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+<header class="header-section">
+    <div class="container">
+        <!-- logo -->
+        <a class="site-logo" href="index.html">
+            <img src="images/logo.png" alt="logo">  
+        </a>
+        <!-- 导航 -->
+         <nav class="main-menu">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">游戏库</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+         </nav>
+         <div class="user-panel">
+            <a href="#">登录</a> / <a href="#">注册</a>
+         </div>
+    </div>
+</header>
+<!-- 轮播图 -->
+ <section class="hero-section">
+    <div class="hero-slider owl-carousel">
+        <div class="hs-item set-bg" style="background-image: url(images/slider-1.jpg);">
+            <div class="hs-text">
+                <div class="container">
+                    <h2>最好的 <span>游戏</span></h2>
+                    <p>探索无尽的世界，挑战强大的敌人，在每一次冒险中书写属于你的传奇故事。 <br>
+                        加入全球玩家的行列，体验前所未有的战斗激情与团队合作的力量。 <br>
+                        从经典到创新，我们的游戏库满足每一位玩家的口味，让你享受每一个精彩瞬间。
+                    </p>
+                    <a href="#" class="site-btn">查看更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="hs-item set-bg" style="background-image: url(images/slider-2.jpg)">
+            <div class="hs-text">
+                <div class="container">
+                    <h2>最好的 <span>游戏</span></h2>
+                    <p>探索无尽的世界，挑战强大的敌人，在每一次冒险中书写属于你的传奇故事。 <br>
+                    加入全球玩家的行列，体验前所未有的战斗激情与团队合作的力量。 <br>
+                    从经典到创新，我们的游戏库满足每一位玩家的口味，让你享受每一个精彩瞬间。
+                    </p>
+                    <a href="#" class="site-btn">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ <!-- 轮播图结束 -->
+</body>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+         $(function () {
+                // 轮播
+                $('.hero-slider').owlCarousel({
+                        loop: true, // 启用循环模式
+                        nav: false, // 禁用导航箭头
+                        dots: true, // 显示"点"控件
+                        mouseDrag: false, // 禁用鼠标拖动功能
+                        animateOut: 'fadeOut', // 设置淡出效果
+                        animateIn: 'fadeIn', // 设置淡入效果
+                        items: 1, // 设置轮播项数量
+                        autoplay: true // 开启自动播放
+                });
+
+                var dot = $('.hero-slider .owl-dot');
+                dot.each(function () {
+                        var index = $(this).index() + 1;
+                        if (index < 10) {
+                                $(this).html('0').append(index);
+                                $(this).append('<span>.</span>');
+                        } else {
+                                $(this).html(index);
+                                $(this).append('<span>.</span>');
+                        }
+                });
+         });
+  </script>
+
+</html>

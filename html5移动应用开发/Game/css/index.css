@@ -4,6 +4,13 @@
     margin: 0;
     padding: 0;
 }
+/* 背景设置 */
+.set-bg{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+}
+/* 头部设置 */
 .header-section{
     height:80px;
     background-color: #131313;
@@ -13,7 +20,7 @@
     width:1200px;
     margin:0 auto;
     border:1px solid red;
-    height:100%;
+    padding:16px 0px;
     display:flex;
     justify-content: space-between;
 }
@@ -58,4 +65,117 @@
     font-size:14px;
     color:#131313;
     font-weight: 600;
+}
+
+a,a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+/* 轮播图开始 */
+.hero-section{
+    background-color: #131313;
+}
+
+.hero-slider .hs-item{
+    height: 865px;
+    display:table;
+    width:100%;
+}
+
+/* 版心设置 */
+.hero-section .container{
+    width:1200px;
+    margin:0 auto;
+    border: 1px solid red;
+}
+
+/* 文字内容区域 */
+.hero-slider .hs-text{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+/* 标题设置 */
+.hero-slider .hs-text h2{
+    color:#fff;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 30px;
+    position:relative;
+    top:-80px;
+    opacity:1
+}
+
+/* 标题黄色字体设置 */
+.hero-slider .hs-text h2 span {
+    color:#ffb320
+}
+
+/* 段落文本设置 */
+.hero-slider .hs-text p{
+    font-size:14px;
+    line-height:2;
+        color:#fff;
+        margin-bottom: 30px;
+        position:relative;
+        top:-90px;
+        opacity:1;
+}
+
+.site-btn{
+    padding:11px 30px;
+    min-width:90px;
+    display:inline-block;
+    color:#fff;
+    background-color: #ffb320;
+    border-radius: 30px;
+    FONT-WEIGHT:600;
+    position: relative;
+        top:-100px;
+        opacity:1;
+}
+
+
+/* owl */
+.hero-slider .owl-dots {
+    position: relative;
+    max-width: 1146px;
+    margin: -33px auto 0;
+    top: -67px;
+    z-index: 5;
+}
+.hero-slider .owl-dots .owl-dot {
+    display: inline-block;
+    margin-right: 13px;
+    width: 33px;
+    height: 33px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 40px;
+    background: #dbe2ec;
+}
+
+.hero-slider .owl-dots .owl-dot.active {
+    background: #ffb320;
+  color: #fff;
+} 
+
+.hero-slider .owl-item.active .hs-item h2,
+.hero-slider .owl-item.active .hs-item p,
+.hero-slider .owl-item.active .hs-item .site-btn {
+    top: 0;
+    opacity: 1;
+}
+/* 会在1秒后开始淡入并移动到正确的位置 */
+.hero-slider .owl-item.active .hs-item h2 {
+    transition: all 0.5s ease 1s;
+}
+.hero-slider .owl-item.active .hs-item p {
+    transition: all 0.5s ease 0.8s;
+}
+.hero-slider .owl-item.active .hs-item .site-btn {
+    transition:all 0.5s ease 0.6s;
 }
