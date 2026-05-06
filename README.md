@@ -1,9 +1,10 @@
-# PycharmProjects
+# Study-Projects
 
 #### 介绍
-个人利用git用于多机同步
+我个人的学习仓库，个人利用git用于多机同步
 
 #### 协议
-MIT License
+**MIT License**
+
 所有人都可以查看代码以供学习、研究，无需标注原作者
 如需修改代码可以fork本仓库
