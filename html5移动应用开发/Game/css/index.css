@@ -179,3 +179,65 @@ a,a:hover,a:focus{
 .hero-slider .owl-item.active .hs-item .site-btn {
     transition:all 0.5s ease 0.6s;
 }
+
+
+/* 最新新闻模块 */
+.latest-news-section {
+    overflow: hidden;
+    display:block;
+    clear:both;
+    background: #131313;
+    padding: 24px 0;
+    position:relative;  /*相对定位：身子动了，影子还在*/
+}
+
+.intitle{
+    position:absolute; /*绝对定位：彻底放飞自我 后面的元素会自动补齐位置*/
+    height:100%;
+    width:30%;
+    LEFT:0;
+    TOP:0;
+    text-align: right;
+    padding-top:24px;
+    padding-right:66px;
+    font-size:18px;
+    font-weight: 500;
+    color:#fff;
+    background:#ffb320;
+    z-index:1; /*元素层级，数字越大，显示层级越高*/
+}
+
+.news-ticker{
+    width:70%;
+    float:right;
+    overflow:hidden;
+    /* display:inline-block; */
+}
+
+/* 让每条新闻横向排列，这样跑马灯才有"长长一条"可以滚动 */
+.news-ticker-content .nt-item{
+    display: inline-block;   /* 横向排列的关键 */
+    color: #fff;
+    font-size: 14px;
+    margin-right: 40px;      /* 每条新闻之间留点距离 */
+}
+
+.news-ticker-content .nt-item span{
+    margin-right: 35px; /*右边的空气填充*/
+    display:inline-block;
+    text-transform: uppercase;  /*全部大写*/
+    font-size:12px;
+    font-weight: 500;
+    color:#fff;
+    padding: 4px 20px;
+}
+
+.news-ticker-content .nt-item span.new{
+    background: #ff205f;
+}
+.news-ticker-content .nt-item span.strategy{
+    background: #4eae60;
+}
+.news-ticker-content .nt-item span.racing{
+    background: #694eae;
+}

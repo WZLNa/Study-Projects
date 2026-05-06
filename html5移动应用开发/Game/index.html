@@ -65,10 +65,33 @@
     </div>
  </section>
  <!-- 轮播图结束 -->
+
+ <!-- 新闻模块 -->
+<div class="latest-news-section">
+    <div class="intitle">最新新闻</div>
+    <div class="news-ticker">
+        <div class="news-ticker-content">
+            <div class="nt-item"><span class="new">新手推荐</span>学习游戏的基本操作，掌握关键技巧，轻松开始你的游戏之旅</div>
+            <div class="nt-item"><span class="strategy">策略</span>学习游戏的基本操作，掌握关键技巧，轻松开始你的游戏之旅</div>
+            <div class="nt-item"><span class="racing">赛车</span>学习游戏的基本操作，掌握关键技巧，轻松开始你的游戏之旅</div>
+        </div>
+    </div>
+</div>
 </body>
+
+
+
+
+
+
+
+
+
+
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
   <script>
          $(function () {
                 // 轮播
@@ -95,6 +118,13 @@
                         }
                 });
          });
+         // 最新新闻模块
+        $('.news-ticker').marquee({
+            duration: 10000, // 滚动持续时间
+            delayBeforeStart: 0, // 开始前的延迟时间
+            direction: 'left', // 从右向左滚动
+            duplicated: true // 是否复制文本以实现无缝滚动
+        });
   </script>
 
 </html>
