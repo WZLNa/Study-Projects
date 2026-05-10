@@ -22,7 +22,7 @@
     border:1px solid red;
     padding:16px 0px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between; /* 两端对齐，中间散开 */
 }
 .site-logo{
     padding-top: 6px;
@@ -240,4 +240,126 @@ a,a:hover,a:focus{
 }
 .news-ticker-content .nt-item span.racing{
     background: #694eae;
+}
+
+
+/*功能模块*/
+.feature-section {
+    padding:20px; /*四周20px空气*/
+    padding-top:97px; /*上方指定为97px空气*/
+        padding-bottom: 97px; /*下方指定为97px空气*/
+}
+
+.container{
+    max-width: 1200px; /* 最大宽度只有1200像素 */
+    margin:0 auto; /* 上下0,左右"自动" → 浏览器把它居中 */
+}
+
+.feature-now {
+    display:flex;
+    justify-content: space-between; /* 两端对齐，中间散开 */
+}
+
+.feature-column{
+    width:23%;
+    padding:0;
+    border:1px solid red;
+}
+
+/* 功能模块内容区域代码 */
+.feature-item{
+    border:1px solid pink;
+    height:415px;
+    position: relative; /*相对定位：身子动了，影子还在*/
+    background-color: #ccc;
+}
+
+.feature-item:after{ /*跟屁虫*/
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background: #000;
+    opacity:.65 /*透明度设置*/
+}
+
+.feature-item .cata{
+    position:relative;
+    margin-top:28px;
+    margin-left:29px;
+    z-index:3;
+}
+
+.cata{
+    display:inline-block; /*不霸占一整行,像文字一样并排*/
+    text-transform: uppercase; /*显示为大写字母*/
+    font-size: 12px;
+    font-weight: 500;
+    color:#fff;
+    padding:6px 25px; /*内边距 上下6 左右25*/
+}
+ 
+.cata.new{ /*如果一个标签，它既穿了叫 cata 的衣服，又戴了叫 new 的帽子，才生效*/
+    background: #ff205f;
+}
+.cata.strategy{
+    background: #4eae60;
+}
+.cata.racing{
+    background: #694eae;
+}
+.cata.adventure{
+    background: #40abf5;
+}
+
+.feature-item .fi-content{ /*（中间有空格），是“父子关系”才生效！*/
+    position:absolute;
+    width:100%;
+    left:0;
+    bottom:0; /*指定这个元素的底边，距离参照物（也就是那个有定位属性的父盒子）的底边，有多远*/
+    padding:0 26px 24px;
+    z-index: 2;
+    border:1px solid red;
+}
+
+.feature-item .fi-content .fi-comment {
+    font-size:12px;
+    opacity: .54;
+}
+
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+    color: #fff;
+}
+
+/* 近期游戏 */
+.recent-game-section{
+    background-color: #eef2f6;
+    border-top: 1px solid #d6dee7; /*在盒子的头顶上，画一条横线（顶边框）*/
+    border-bottom: 1px solid #d6dee7;
+    padding-top:97px; /*字与边框的边距*/
+    padding-bottom:97px;
+}
+
+/*列容器设置*/
+.game-row{
+    display:flex;
+    justify-content:space-between; /* 两端对齐，中间散开 */
+}
+/*每一列设置*/
+.game-column{
+    width:32%;
+    padding:0;
+    border:1px soild red;
 }
