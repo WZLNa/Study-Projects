@@ -363,3 +363,13 @@ a,a:hover,a:focus{
     padding:0;
     border:1px soild red;
 }
+/* 模块标题设置 */
+.section-title{
+    text-align: center; /*居中显示*/
+    margin-bottom:75px;
+}
+/* 模块内h2标题 */
+.section-title h2{
+    padding-top:10px;
+    font-size: 36px;
+}
