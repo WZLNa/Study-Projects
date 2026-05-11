@@ -343,6 +343,8 @@ a,a:hover,a:focus{
     color: #fff;
 }
 
+
+
 /* 近期游戏 */
 .recent-game-section{
     background-color: #eef2f6;
@@ -372,4 +374,59 @@ a,a:hover,a:focus{
 .section-title h2{
     padding-top:10px;
     font-size: 36px;
+}
+
+/* 近期游戏内容区域 */
+/*上部分的高度以及边距*/
+.renect-game-item .rgi-thumb{
+    height:204px;
+    padding:25px 28px; /*内边距 上下6 左右25*/
+}
+
+/*下部分样式*/
+.renect-game-item .rgi-content{
+    padding:34px 22px 20px;
+    background: #fff;
+    border:1px solid #d6dee7; /*四周边框*/
+    border-top:none; /*把盒子头顶上的那条线擦掉 只有左、右、下有边框*/
+    position:relative; /* 相对定位：身子动了，影子还在 */
+}
+/*标题样式*/
+.renect-game-item .rgi-content h5{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+/*评论样式*/
+.recent-game-item .rgi-content .comment{
+    font-size:12px;
+    color:#737373;
+}
+/*喜欢和收藏容器*/
+.recent-game-item .rgi-extra{
+    position: absolute; /*绝对定位*/
+    right:0;
+    bottom:0;
+    width:70px;
+}
+/*喜欢和收藏图片容器设置*/
+.recent-game-item .rgi-extra .rgi-star,
+.recent-game-item .rgi-extra .rgi-heart{
+    height:35px;
+    width:35px;
+    float:left;
+    display:block; /*和inline-block 相反*/
+    padding:6px 8px 0;
+}
+
+/*设置图片显示方式*/
+.img {
+    max-width:100%;
+    vertical-align: middle; /* vertical-align:调整同一行里，高矮不同的，怎么对齐。*/
+}
+
+.recent-game-item .rgi-extra .rgi-star{
+    background: #ffb320;
+}
+.recent-game-item .rgi-extra .rgi-heart{
+    background: #ff205f;
 }
