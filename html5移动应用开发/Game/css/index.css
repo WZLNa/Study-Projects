@@ -19,7 +19,7 @@
 .header-section .container{
     width:1200px;
     margin:0 auto;
-    border:1px solid red;
+    border:1px solid pink;
     padding:16px 0px;
     display:flex;
     justify-content: space-between; /* 两端对齐，中间散开 */
@@ -87,7 +87,7 @@ a,a:hover,a:focus{
 .hero-section .container{
     width:1200px;
     margin:0 auto;
-    border: 1px solid red;
+    border: 1px solid pink;
 }
 
 /* 文字内容区域 */
@@ -263,7 +263,7 @@ a,a:hover,a:focus{
 .feature-column{
     width:23%;
     padding:0;
-    border:1px solid red;
+    border:1px solid pink;
 }
 
 /* 功能模块内容区域代码 */
@@ -321,7 +321,7 @@ a,a:hover,a:focus{
     bottom:0; /*指定这个元素的底边，距离参照物（也就是那个有定位属性的父盒子）的底边，有多远*/
     padding:0 26px 24px;
     z-index: 2;
-    border:1px solid red;
+    border:1px solid pink;
 }
 
 .feature-item .fi-content .fi-comment {
@@ -378,13 +378,13 @@ a,a:hover,a:focus{
 
 /* 近期游戏内容区域 */
 /*上部分的高度以及边距*/
-.renect-game-item .rgi-thumb{
+.recent-game-item .rgi-thumb{
     height:204px;
     padding:25px 28px; /*内边距 上下6 左右25*/
 }
 
 /*下部分样式*/
-.renect-game-item .rgi-content{
+.recent-game-item .rgi-content{
     padding:34px 22px 20px;
     background: #fff;
     border:1px solid #d6dee7; /*四周边框*/
@@ -429,4 +429,315 @@ a,a:hover,a:focus{
 }
 .recent-game-item .rgi-extra .rgi-heart{
     background: #ff205f;
+}
+
+/*通用模块上下边距*/
+.spad { 
+    padding-top:97px;
+    padding-bottom: 97px;
+}
+
+/* 比赛模块 */
+.tournaments-section{
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat; /*浏览器样式 贴瓷砖自动铺满全屏*/
+}
+/* 标题标签设置 */
+.tournament-title{
+    display:inline-block;
+    padding:7px 25px;
+    font-size:12px;
+    font-weight: 500;
+    color:#fff;
+    background:#fb6e10;
+    margin-bottom: 10px;
+}
+/* 项目容器设置 */
+.tournament-row {
+    display: flex;
+    justify-content: space-between;
+}
+/* 每一项设置 */
+.tournament-item{
+    background: #252525;
+    width:48%;
+    margin-bottom: 20px;
+    border: 1px solid pink;/*可以删除*/
+}
+
+/* 比赛标签设置 */
+.tournament-item .ti-notic {
+    display:inline-block;
+    padding: 8px 21px; /*内边距 上下8 左右21*/
+    font-size:12px;
+    font-weight:700;
+    color:#131313;
+    text-transform: uppercase; /*全部大写*/
+    background: #ffb320;
+}
+/* 比赛项容器设置 */
+.tournament-item .ti-content {
+    padding: 38px 24px;
+    display:flex;
+}
+/* 图片容器设置 */
+.tournament-item .ti-thumb {
+    width:168px;
+    height:178px;
+    background-size:cover;
+    background-position: center;
+}
+/* 赛事信息边距设置 */
+.tournament-item .ti-text {
+    padding-left:20px;
+}
+/* 比赛标题设置 */
+.tournament-item .ti-text h4 {
+    color:#ffb320;
+    margin-bottom: 20px; /*下面20px*/
+}
+/* 列表项目编号和下外边距设置 */
+.tournament-item .ti-text ul {
+    list-style: none;
+    margin-bottom:20px;
+}
+/* 比赛信息字体大小边距设置 */
+.tournament-item .ti-text ul li {
+    color:#fff;
+    font-size: 12px;
+    margin-bottom:6px;
+}
+/* 比赛信息颜色设置 */
+.tournament-item .ti-text ul li span {
+    color:#9a9a9a;
+}
+/* 奖品整体设置 */
+.tournament-item .ti-text p {
+    font-size:12px;
+    margin-bottom: 0;
+    color:#fff;
+}
+/* 奖品文字设置 */
+.tournament-item .ti-text p span {
+    font-weight: 500;
+    color:#ffb320;
+}
+
+/* 最近评价模块背景设置 */
+.review-section{
+    background-position:right top;
+}
+/* 最近评价模块背景设置 */
+.review-row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+
+/* 内容区域设置 */
+.review-item{
+    width:23%;
+    margin-bottom:30px;
+    border:1px solid pink;
+}
+/* 设置上部分的高度背景等内容 */
+.review-item .review-cover{
+    position:relative;
+    margin-bottom:15px;
+    height:345px;
+    background-size:cover;
+    background-position: center;
+}
+/* 设置顶部评分 */
+.review-item .review-cover .score {
+    position:absolute;
+    width:54px;
+    height:54px;
+    top:-27px;
+    left:26px;
+    padding-top: 15px;
+    font-size:18px;
+    font-weight:500;
+    color:#fff;
+    text-align:center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* 设置评分顶部颜色 */
+.review-item .review-cover .score.yellow {
+    background:#ffb320;
+}
+
+.review-item .review-cover .score.purple {
+    background: #696eae;
+}
+.review-item .review-cover .score.pink {
+    background: #ff20ae;
+}
+.review-item .review-cover .score.green {
+    background: #4eae60;
+}
+/* 设置文字居中 */
+.review-item .review-text {
+    text-align: center;
+}
+/* 游戏标题设置 */
+.review-item .review-text h5 {
+    margin-bottom:20px;
+    font-size:16px;
+}
+/*游戏评价设置*/
+.review-item .review-text p {
+    margin-bottom:0;
+    color:#878787;
+    font-size:14px;
+    line-height:2;
+}
+
+/* 页脚部分整体背景 */
+.footer-top-section{
+    background-image: url(../images/pattern.png);
+    background-repeat:repeat;
+    padding:72px 0;
+}
+/* 设置版心相对定位 */
+.footer-top-section .container {
+    position:relative;
+}
+/* 设置游戏角色位置 */
+.footer-top-bg {
+    position:absolute;
+    left:-30px;
+    bottom:-85px;
+    z-index:2;
+}
+/* 设置容器为Flex实现水平对齐 */
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+/* 设置LOGO容器 */
+.footer-logo {
+    width: 30%;
+    color:#fff;
+    font-size:large;
+}
+/* 设置LOGO位置 */
+.footer-logo img{
+    margin-bottom:35px;
+}
+/* 设置最新帖子和最新评论容器宽度及基础配置 */
+.footer-weight{
+    width: 30%;
+    padding: 40px 30px 7px;
+    background:#252525;
+    border:1px solid #4a4a4a;
+    height:500px;/*高度是为了看整体效果*/
+}
+
+/* 设置帖子标题 */
+.footer-weight .fw-title{
+    color:#fff;
+    margin-bottom: 40px;
+}
+/*设置帖子每一项的距离*/
+.latest-blog .lb-item {
+    margin-bottom:23px;
+    overflow: hidden; /*溢出控制*/
+}
+/*设置帖子图片区域大小*/
+.latest-blog .lb-item .lb-thumb {
+    width:97px;
+    height:97px;
+    float:left;
+}
+/* 设置帖子信息左内边距 */
+.latest-blog .lb-item .lb-content {
+    padding-left:110px;
+}
+/* 设置日期 */
+.latest-blog .lb-item .lb-content .lb-date{
+    font-size:12px;
+    color:#ffb320;
+    margin-bottom:8px;
+}
+/* 设置帖子标题 */
+.latest-blog .lb-item .lb-content p {
+    font-size:12px;
+    margin-bottom:5px;
+    color:#d3d3d3;
+}
+/* 设置作者字体 */
+.latest-blog .lb-item .lb-content .lb-author {
+    font-size:12px;
+    color:#d3d3d3;
+    opacity:0.45;
+}
+
+
+/* 评论区域间隔 */
+.top-comment .tc-item {
+    margin-bottom: 23px;
+    overflow:hidden; /*超出部分控制*/
+}
+/*评论区域图片设置*/
+.top-comment .tc-item .tc-thumb {
+    width:63px;
+    height:63px;
+    border-radius:50%; /*圆角控制*/
+    float:left;
+}
+/* 评论区域左侧设置 */
+.top-comment .tc-item .tc-content {
+    padding-left: 100px;
+}
+.top-comment .tc-item .tc-content p {
+    font-size:12px;
+    color:#d3d3d3;
+    margin-bottom:5px;
+}
+.top-comment .tc-item .tc-content p a {
+    color:#ff205f;
+}
+.top-comment .tc-item .tc-content p span {
+    color:#7a7a7a;
+}
+.top-comment .tc-item .tc-content .tc-date{
+    font-size:12px;
+    color:#ffb320;
+}
+
+/* 网站底部 */
+.footer-section {
+    padding:18px 0 16px;
+    overflow:hidden;
+    background: #252525;
+}
+/*设置底部容器为Flex布局*/
+.footer-section .container {
+    display:flex;
+    justify-content:space-between;
+}
+/* 设置取消项目符号 */
+.footer-menu{
+    list-style:none;
+}
+/*设置li为行内模式，使其横向排列*/
+.footer-menu li{
+    display:inline;
+}
+/* 设置a标签 */
+.footer-menu li a {
+    display:inline-block;
+    font-size:14px;
+    font-weight:500;
+    color:#aeaeae;
+    margin-left:30px;
+}
+/* 设置版权信息文字 */
+.copyright {
+    font-weight:500;
+    color:#aeaeae;
 }
