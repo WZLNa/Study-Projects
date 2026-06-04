@@ -19,7 +19,6 @@
 .header-section .container{
     width:1200px;
     margin:0 auto;
-    border:1px solid pink;
     padding:16px 0px;
     display:flex;
     justify-content: space-between; /* 两端对齐，中间散开 */
@@ -87,7 +86,6 @@ a,a:hover,a:focus{
 .hero-section .container{
     width:1200px;
     margin:0 auto;
-    border: 1px solid pink;
 }
 
 /* 文字内容区域 */
@@ -263,12 +261,10 @@ a,a:hover,a:focus{
 .feature-column{
     width:23%;
     padding:0;
-    border:1px solid pink;
 }
 
 /* 功能模块内容区域代码 */
 .feature-item{
-    border:1px solid pink;
     height:415px;
     position: relative; /*相对定位：身子动了，影子还在*/
     background-color: #ccc;
@@ -321,7 +317,6 @@ a,a:hover,a:focus{
     bottom:0; /*指定这个元素的底边，距离参照物（也就是那个有定位属性的父盒子）的底边，有多远*/
     padding:0 26px 24px;
     z-index: 2;
-    border:1px solid pink;
 }
 
 .feature-item .fi-content .fi-comment {
@@ -462,7 +457,6 @@ a,a:hover,a:focus{
     background: #252525;
     width:48%;
     margin-bottom: 20px;
-    border: 1px solid pink;/*可以删除*/
 }
 
 /* 比赛标签设置 */
@@ -539,7 +533,6 @@ a,a:hover,a:focus{
 .review-item{
     width:23%;
     margin-bottom:30px;
-    border:1px solid pink;
 }
 /* 设置上部分的高度背景等内容 */
 .review-item .review-cover{
