@@ -47,6 +47,16 @@
                         Alist
                     </a>
                 </span>
+                <!--添加备案信息-->
+                <span class="nav-item">
+                    <a class="nav-link" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">
+                        <i class="fa-solid fa-shield-check" style="color:#409EFF;" aria-hidden="true">
+                        </i>
+<br>
+                        冀ICP备2026017395号-1 | 
+<a href="https://beian.mps.gov.cn/#/query/webSearch?code=13092602000237" rel="noreferrer" target="_blank">冀公网安备13092602000237号</a>
+                    </a>
+                </span>
 				<br />
                 <br />
 			
