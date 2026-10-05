@@ -17,12 +17,12 @@ public class VariableDemo3 {
         System.out.println(a);
          */
 
-        int a,b,c,d;
-        a = 10;
+        int a,b,c,d; // 定义未赋值
+        a = 10; // 赋值
         b = 20;
         c = 30;
         d = 40;
-        a = b = c = d =10;
+        a = b = c = d =10; // 批量赋值
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);

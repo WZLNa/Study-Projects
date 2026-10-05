@@ -23,7 +23,7 @@ public class VariableDemo1 {
         System.out.println(weixinMoney + alipayMoney + cardMoney);
 
         // 5. 微信收了10元红包
-        // weixinMoney = 10 意思是直接修改变量值,此处不能直接修改
+        // weixinMoney = 10 的意思是直接修改变量值,此处不能直接修改
         weixinMoney = weixinMoney + 10;
         System.out.println("现在的余额" + weixinMoney);
 
