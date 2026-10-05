@@ -1,6 +1,6 @@
 package top.wzln.variable;
 
-public class VariableDemo5 {
+public class VariableDemo5_BmiCalc {
     static void main(String[] args) {
 
         // BMI = 体重 / 身高的平方

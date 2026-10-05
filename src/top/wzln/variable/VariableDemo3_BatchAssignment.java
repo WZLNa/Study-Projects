@@ -1,6 +1,6 @@
 package top.wzln.variable;
 
-public class VariableDemo3 {
+public class VariableDemo3_BatchAssignment {
     static void main(String[] args) {
         /*
             变量的注意事项:

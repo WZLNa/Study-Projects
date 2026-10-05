@@ -2,7 +2,7 @@ package top.wzln.operator;
 
 import java.lang.classfile.attribute.SourceDebugExtensionAttribute;
 
-public class OperatorDemo4 {
+public class OperatorDemo4_TypePromotion {
     static void main(String[] args) {
 
         // 练习一：

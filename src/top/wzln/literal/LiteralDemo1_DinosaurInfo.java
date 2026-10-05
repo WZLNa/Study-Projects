@@ -1,6 +1,6 @@
 package top.wzln.literal;
 
-public class LiteralDemo1 {
+public class LiteralDemo1_DinosaurInfo {
     public static void main(String[] args) {
         // 输出恐龙的信息:霸王龙 8岁 11.5 公
         // 输出恐龙的名字

@@ -3,7 +3,7 @@ package top.wzln.variable;
 // 确定Scanner的位置
 import java.util.Scanner;
 
-public class VariableDemo6 {
+public class VariableDemo6_ScannerInput {
     static void main(String[] args) {
         /*
             键盘录入:

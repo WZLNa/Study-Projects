@@ -2,7 +2,7 @@ package top.wzln.operator;
 
 import java.util.Scanner;
 
-public class OperatorDemo3 {
+public class OperatorDemo3_SecondsToTime {
     static void main(String[] args) {
         /*
             给定秒数seconds,将其转换为对应的小时数 分钟数和秒数,使得总时间不变,但分钟数和秒数都不超过59.

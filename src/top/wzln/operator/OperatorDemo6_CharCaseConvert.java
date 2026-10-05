@@ -2,7 +2,7 @@ package top.wzln.operator;
 
 import java.util.Scanner;
 
-public class OperatorDemo6 {
+public class OperatorDemo6_CharCaseConvert {
     static void main(String[] args) {
         // 实现字母的大小写转换,将大写字母转化为小写字母
         // A------->a
@@ -14,7 +14,7 @@ public class OperatorDemo6 {
         char big = sc.next().charAt(0); // charAt(0) 从字符串中取出第 1 个字符保存为char
 
         // 2.转成小写
-        char small = (char) (big + 32); // char 参与数学运算后，结果会自动变成 int
+        char small = (char) (big + 32); // char 参与数学运算后，结果会自动变成 int,所以需要再(char)一下
         System.out.println(small);
 
     }

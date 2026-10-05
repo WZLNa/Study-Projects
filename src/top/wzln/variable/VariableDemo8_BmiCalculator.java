@@ -2,7 +2,7 @@ package top.wzln.variable;
 
 import java.util.Scanner;
 
-public class VariableDemo8 {
+public class VariableDemo8_BmiCalculator {
     static void main(String[] args) {
         // BMI计算器(支持输入版)
         Scanner sc = new Scanner(System.in);

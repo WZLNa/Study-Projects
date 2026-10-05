@@ -1,6 +1,6 @@
 package top.wzln.variable;
 
-public class VariableDemo1 {
+public class VariableDemo1_WechatBalance {
     public static void main(String[] args) {
         /*
         微信余额:0元

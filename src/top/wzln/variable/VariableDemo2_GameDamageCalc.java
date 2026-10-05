@@ -1,6 +1,6 @@
 package top.wzln.variable;
 
-public class VariableDemo2 {
+public class VariableDemo2_GameDamageCalc {
     static void main(String[] args) {
         /*
             我方:叉子       对方:长手

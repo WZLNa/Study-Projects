@@ -2,7 +2,7 @@ package top.wzln.variable;
 
 import java.util.Scanner;
 
-public class VariableDemo7 {
+public class VariableDemo7_SumTwoNumbers {
     static void main(String[] args) {
         // 定义两个整数类型的变量num1和num2,键盘录入数据分别为两个变量赋值
         // 求两个数的和并打印

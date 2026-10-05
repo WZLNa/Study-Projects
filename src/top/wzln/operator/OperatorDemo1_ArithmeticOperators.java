@@ -1,6 +1,6 @@
 package top.wzln.operator;
 
-public class OperatorDemo1 {
+public class OperatorDemo1_ArithmeticOperators {
     static void main(String[] args) {
         /*
             整数运算符:+ _ * / %

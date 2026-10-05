@@ -1,6 +1,6 @@
 package top.wzln.variable;
 
-public class VariableDemo4 {
+public class VariableDemo4_EightDataTypes {
     static void main(String[] args) {
         /*
             定义8种数据类型的变量:

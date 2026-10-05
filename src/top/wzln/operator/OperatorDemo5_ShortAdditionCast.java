@@ -1,6 +1,6 @@
 package top.wzln.operator;
 
-public class OperatorDemo5 {
+public class OperatorDemo5_ShortAdditionCast {
     static void main(String[] args) {
         /*
             练习二:
