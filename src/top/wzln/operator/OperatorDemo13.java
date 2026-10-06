@@ -21,5 +21,12 @@ public class OperatorDemo13 {
                 System.out.println("该数不包含7也不能被7整除,不是7的有缘数");
             }
         }
+
+        // 需求2 做法2
+        if (two_gewei == 7 | two_shiwei == 7 | two % 7 ==0){
+            System.out.println("该数包含7或能被7整除,是有缘数");
+        }else{
+                System.out.println("该数不包含7也不能被7整除,不是7的有缘数(做法二)");
+        }
     }
 }
