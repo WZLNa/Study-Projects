@@ -19,6 +19,7 @@ public class Week1Huiwenshu {
             num = num / 10;
         }
 
+
         // 处理获取到反转数后的逻辑
         if (reverse == original){
             System.out.println(original + "是一个回文数");
