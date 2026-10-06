@@ -40,6 +40,5 @@ public class IfDemo7 {
         }else{
             System.out.println("请输入一个正整数!而不是负的");
         }
-
     }
 }
