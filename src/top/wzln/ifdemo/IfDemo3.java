@@ -17,8 +17,15 @@ public class IfDemo3 {
 
                 3.小括号后面不能有分号
                     小括号后面不能有分号，这样会拆开if的语句结构
+
+                    if (tempature >= 38.0); System.out.println("您的体温过高!");
+                                          ^
+
                 4.判断布尔类型的变量
                     判断布尔类型的变量，直换把变量写在小括号中即可
+
+                    if (true); System.out.println("您的体温过高!");
+
          */
 
         // 1.定义一个变量
