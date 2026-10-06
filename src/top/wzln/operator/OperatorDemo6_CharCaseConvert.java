@@ -17,5 +17,8 @@ public class OperatorDemo6_CharCaseConvert {
         char small = (char) (big + 32); // char 参与数学运算后，结果会自动变成 int,所以需要再(char)一下
         System.out.println(small);
 
+        char test = 37;
+        System.out.println(test);
+
     }
 }
