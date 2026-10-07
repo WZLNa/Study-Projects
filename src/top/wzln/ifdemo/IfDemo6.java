@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class IfDemo6 {
     static void main(String[] args) {
+
         /*
             需求:小明在每次订外卖都会在多家平台进行对比,看谁的优惠力度更大
                 已知:
