@@ -24,7 +24,7 @@ public class IfDemo3 {
                 4.判断布尔类型的变量
                     判断布尔类型的变量，直换把变量写在小括号中即可
 
-                    if (true); System.out.println("您的体温过高!");
+                    if (boolean); System.out.println("您的体温过高!");
 
          */
 
