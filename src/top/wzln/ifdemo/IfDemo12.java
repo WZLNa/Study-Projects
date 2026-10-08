@@ -31,18 +31,18 @@ public class IfDemo12 {
             if ( allusage <= 100 ){
                 cost1 = allusage * 0.5 ;
 
-                System.out.println( "您的总花费为: " + allusage +" * 0.5 = " + cost1);
+                System.out.println( "您的总花费为: " + allusage +"*0.5= " + cost1);
             } else if ( allusage <= 200 ) {
                 cost1 = 100 * 0.5 ;
                 cost2 = ( allusage - 100 ) * 0.8 ;
 
-                System.out.println( "您的总花费为: " + "100 * 0.5 + " + (allusage-100) + " * 0.8 = " + (cost1 + cost2) );
+                System.out.println( "您的总花费为: " + "100*0.5+" + (allusage-100) + "*0.8= " + (cost1 + cost2) );
             } else {
                 cost1 = 100 * 0.5 ;
                 cost2 = 100 * 0.8 ; // cost1和cost2相差为100,这里需要是100*0.8
                 cost3 = ( allusage - 200 ) * 1.2 ;
 
-                System.out.println("您的总花费为: " + "100 * 0.5 + 100 * 0.8 + " + ( allusage - 200 ) + " * 1.2 = " + (cost1+cost2+cost3) );
+                System.out.println("您的总花费为: " + "100*0.5+100*0.8+" + ( allusage - 200 ) + "*1.2= " + (cost1+cost2+cost3) );
             }
 
         } else {
