@@ -20,10 +20,10 @@ public class IfDemo12 {
         // 输入变量usage表示实际用电量
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入您的实际用电量:");
-        double allusage = sc.nextDouble();
-        double cost1 = 0 ;
-        double cost2 = 0 ;
-        double cost3 = 0 ;
+        double allusage = sc.nextDouble();  // 实际用电量
+        double cost1 = 0 ;  //阶梯计费 第一阶梯
+        double cost2 = 0 ;  //阶梯计费 第二阶梯
+        double cost3 = 0 ;  //阶梯计费 第三阶梯
 
         // 计算
         if ( allusage >= 0 ){
@@ -34,13 +34,13 @@ public class IfDemo12 {
                 System.out.println( "您的总花费为: " + allusage +"*0.5= " + cost1);
             } else if ( allusage <= 200 ) {
                 cost1 = 100 * 0.5 ;
-                cost2 = ( allusage - 100 ) * 0.8 ;
+                cost2 = ( allusage - 100 ) * 0.8 ; // 减掉第一阶段的100 (超出的乘以0.8) 得出第二阶段价格,最后两阶段相加
 
                 System.out.println( "您的总花费为: " + "100*0.5+" + (allusage-100) + "*0.8= " + (cost1 + cost2) );
-            } else {
+            } else {  //大于0且不小于等于200,则大于200
                 cost1 = 100 * 0.5 ;
                 cost2 = 100 * 0.8 ; // cost1和cost2相差为100,这里需要是100*0.8
-                cost3 = ( allusage - 200 ) * 1.2 ;
+                cost3 = ( allusage - 200 ) * 1.2 ; // 计算出单第三阶段的价格
 
                 System.out.println("您的总花费为: " + "100*0.5+100*0.8+" + ( allusage - 200 ) + "*1.2= " + (cost1+cost2+cost3) );
             }
