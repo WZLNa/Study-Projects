@@ -1,4 +1,4 @@
-package top.wzln.switcha;
+package top.wzln.switchDemo;
 
 import java.util.Scanner;
 

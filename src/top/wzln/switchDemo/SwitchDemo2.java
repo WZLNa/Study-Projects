@@ -1,4 +1,4 @@
-package top.wzln.switcha;
+package top.wzln.switchDemo;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class SwitchDemo2 {
                     为了观看比较方便,提高代码的阅读性
                     一般来讲,case是从小到大依次书写的,default是写在最下面的
                 省略:
-                default是可以忽略不写的,在此时如果所有的case都不匹配,则没有输出结果
+                default是可以忽略不写的,但是如果所有的case都不匹配,则没有输出结果
 
          */
 
