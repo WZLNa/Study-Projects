@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>2.8 定位练习</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .father{
+                width: 700px;
+                height: 500px;
+                border:1px solid red;
+                background-color: gainsboro;
+                position: fixed;
+                gap:20px
+                
+            }
+            .father div{
+                width: 170px;
+                height: 140px;
+                border-radius: 9px;
+                box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+            }
+            .son1{
+                background-color: white;
+                position: absolute;
+                
+                left:70px;
+                top:100px;
+                z-index:1;
+                
+            }
+            .son2{
+                background-color: white;
+                position:absolute;
+                
+                left:250px;
+                top:100px;
+            }
+            .son3{
+                background-color: white;
+                position: absolute;
+                
+                left:430px;
+                top:100px;
+            }
+            .son4{
+                background-color: white;
+                position: absolute;
+                
+                top:270px;
+                left:70px;
+            }
+
+            .son5{
+                background-color: white;
+                position: absolute;
+                
+                top:270px;
+                left:250px;
+            }
+
+            .son6{
+                background-color: white;
+                position: absolute;
+                
+                top:270px;
+                left:430px;
+            }
+
+            .father div img {
+                border-radius: 50px; 
+                width:55px;
+                height:55px;
+                position:absolute;
+                right:8px;
+                top:-28px;
+                box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="son1">son1
+                <img src="./1.png" alt="1" >
+            </div>
+            <div class="son2">son2
+                <img src="./1.png" alt="1" >
+            </div>
+            <div class="son3">son3
+                <img src="./1.png" alt="1" >
+            </div>
+            <div class="son4">son4
+                <img src="./1.png" alt="1" >
+            </div>
+            <div class="son5">son5
+                <img src="./1.png" alt="1" >
+            </div>
+            <div class="son6">son6
+                <img src="./1.png" alt="1" >
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>

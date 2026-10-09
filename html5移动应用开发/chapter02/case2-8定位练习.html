@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>2.8 定位练习</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .father{
+                width: 500px;
+                height: 500px;
+                border:1px solid red;
+                position: fixed;
+                
+            }
+            .father div{
+                width: 100px;
+                height: 100px;
+            }
+            .son1{
+                background-color: pink;
+                position: relative;
+                left:200px;
+                top:100px;
+                z-index:1;
+
+            }
+            .son2{
+                background-color: green;
+                position:fixed;
+                left:400px;
+                top:400px;
+            }
+            .son3{
+                background-color: blue;
+                position: absolute;
+                left:200px;
+                top:100px;
+            }
+            .son4{
+                background-color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="son1">son1</div>
+            <div class="son2">son2</div>
+            <div class="son3">son3</div>
+            <div class="son4">son4</div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>

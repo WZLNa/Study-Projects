@@ -1,0 +1,736 @@
+/* 清除默认样式 */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 背景设置 */
+.set-bg{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+}
+/* 头部设置 */
+.header-section{
+    height:80px;
+    background-color: #131313;
+    border-bottom: 1px solid #ffb320;
+}
+.header-section .container{
+    width:1200px;
+    margin:0 auto;
+    padding:16px 0px;
+    display:flex;
+    justify-content: space-between; /* 两端对齐，中间散开 */
+}
+.site-logo{
+    padding-top: 6px;
+}
+
+/* 导航设置 */
+.main-menu{
+    margin-right: 100px;
+}
+
+.main-menu ul{
+    list-style:none;
+}
+
+.main-menu ul li{
+    float: left;
+}
+
+.main-menu ul li a {
+    display:inline-block;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 35px;
+    font-weight: 600;
+    padding: 10px 5px;
+}
+
+.main-menu ul li a:hover{
+    color:#ffb320;
+}
+
+.user-panel{
+    font-weight:500;
+    background-color: #ffb320;
+    padding:8px 28px;
+    border-radius: 30px;
+}
+
+.user-panel a{
+    font-size:14px;
+    color:#131313;
+    font-weight: 600;
+}
+
+a,a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+/* 轮播图开始 */
+.hero-section{
+    background-color: #131313;
+}
+
+.hero-slider .hs-item{
+    height: 865px;
+    display:table;
+    width:100%;
+}
+
+/* 版心设置 */
+.hero-section .container{
+    width:1200px;
+    margin:0 auto;
+}
+
+/* 文字内容区域 */
+.hero-slider .hs-text{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+/* 标题设置 */
+.hero-slider .hs-text h2{
+    color:#fff;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 30px;
+    position:relative;
+    top:-80px;
+    opacity:1
+}
+
+/* 标题黄色字体设置 */
+.hero-slider .hs-text h2 span {
+    color:#ffb320
+}
+
+/* 段落文本设置 */
+.hero-slider .hs-text p{
+    font-size:14px;
+    line-height:2;
+        color:#fff;
+        margin-bottom: 30px;
+        position:relative;
+        top:-90px;
+        opacity:1;
+}
+
+.site-btn{
+    padding:11px 30px;
+    min-width:90px;
+    display:inline-block;
+    color:#fff;
+    background-color: #ffb320;
+    border-radius: 30px;
+    FONT-WEIGHT:600;
+    position: relative;
+        top:-100px;
+        opacity:1;
+}
+
+
+/* owl */
+.hero-slider .owl-dots {
+    position: relative;
+    max-width: 1146px;
+    margin: -33px auto 0;
+    top: -67px;
+    z-index: 5;
+}
+.hero-slider .owl-dots .owl-dot {
+    display: inline-block;
+    margin-right: 13px;
+    width: 33px;
+    height: 33px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 40px;
+    background: #dbe2ec;
+}
+
+.hero-slider .owl-dots .owl-dot.active {
+    background: #ffb320;
+  color: #fff;
+} 
+
+.hero-slider .owl-item.active .hs-item h2,
+.hero-slider .owl-item.active .hs-item p,
+.hero-slider .owl-item.active .hs-item .site-btn {
+    top: 0;
+    opacity: 1;
+}
+/* 会在1秒后开始淡入并移动到正确的位置 */
+.hero-slider .owl-item.active .hs-item h2 {
+    transition: all 0.5s ease 1s;
+}
+.hero-slider .owl-item.active .hs-item p {
+    transition: all 0.5s ease 0.8s;
+}
+.hero-slider .owl-item.active .hs-item .site-btn {
+    transition:all 0.5s ease 0.6s;
+}
+
+
+/* 最新新闻模块 */
+.latest-news-section {
+    overflow: hidden;
+    display:block;
+    clear:both;
+    background: #131313;
+    padding: 24px 0;
+    position:relative;  /*相对定位：身子动了，影子还在*/
+}
+
+.intitle{
+    position:absolute; /*绝对定位：彻底放飞自我 后面的元素会自动补齐位置*/
+    height:100%;
+    width:30%;
+    LEFT:0;
+    TOP:0;
+    text-align: right;
+    padding-top:24px;
+    padding-right:66px;
+    font-size:18px;
+    font-weight: 500;
+    color:#fff;
+    background:#ffb320;
+    z-index:1; /*元素层级，数字越大，显示层级越高*/
+}
+
+.news-ticker{
+    width:70%;
+    float:right;
+    overflow:hidden;
+    /* display:inline-block; */
+}
+
+/* 让每条新闻横向排列，这样跑马灯才有"长长一条"可以滚动 */
+.news-ticker-content .nt-item{
+    display: inline-block;   /* 横向排列的关键 */
+    color: #fff;
+    font-size: 14px;
+    margin-right: 40px;      /* 每条新闻之间留点距离 */
+}
+
+.news-ticker-content .nt-item span{
+    margin-right: 35px; /*右边的空气填充*/
+    display:inline-block;
+    text-transform: uppercase;  /*全部大写*/
+    font-size:12px;
+    font-weight: 500;
+    color:#fff;
+    padding: 4px 20px;
+}
+
+.news-ticker-content .nt-item span.new{
+    background: #ff205f;
+}
+.news-ticker-content .nt-item span.strategy{
+    background: #4eae60;
+}
+.news-ticker-content .nt-item span.racing{
+    background: #694eae;
+}
+
+
+/*功能模块*/
+.feature-section {
+    padding:20px; /*四周20px空气*/
+    padding-top:97px; /*上方指定为97px空气*/
+        padding-bottom: 97px; /*下方指定为97px空气*/
+}
+
+.container{
+    max-width: 1200px; /* 最大宽度只有1200像素 */
+    margin:0 auto; /* 上下0,左右"自动" → 浏览器把它居中 */
+}
+
+.feature-now {
+    display:flex;
+    justify-content: space-between; /* 两端对齐，中间散开 */
+}
+
+.feature-column{
+    width:23%;
+    padding:0;
+}
+
+/* 功能模块内容区域代码 */
+.feature-item{
+    height:415px;
+    position: relative; /*相对定位：身子动了，影子还在*/
+    background-color: #ccc;
+}
+
+.feature-item:after{ /*跟屁虫*/
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background: #000;
+    opacity:.65 /*透明度设置*/
+}
+
+.feature-item .cata{
+    position:relative;
+    margin-top:28px;
+    margin-left:29px;
+    z-index:3;
+}
+
+.cata{
+    display:inline-block; /*不霸占一整行,像文字一样并排*/
+    text-transform: uppercase; /*显示为大写字母*/
+    font-size: 12px;
+    font-weight: 500;
+    color:#fff;
+    padding:6px 25px; /*内边距 上下6 左右25*/
+}
+ 
+.cata.new{ /*如果一个标签，它既穿了叫 cata 的衣服，又戴了叫 new 的帽子，才生效*/
+    background: #ff205f;
+}
+.cata.strategy{
+    background: #4eae60;
+}
+.cata.racing{
+    background: #694eae;
+}
+.cata.adventure{
+    background: #40abf5;
+}
+
+.feature-item .fi-content{ /*（中间有空格），是“父子关系”才生效！*/
+    position:absolute;
+    width:100%;
+    left:0;
+    bottom:0; /*指定这个元素的底边，距离参照物（也就是那个有定位属性的父盒子）的底边，有多远*/
+    padding:0 26px 24px;
+    z-index: 2;
+}
+
+.feature-item .fi-content .fi-comment {
+    font-size:12px;
+    opacity: .54;
+}
+
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+    color: #fff;
+}
+
+
+
+/* 近期游戏 */
+.recent-game-section{
+    background-color: #eef2f6;
+    border-top: 1px solid #d6dee7; /*在盒子的头顶上，画一条横线（顶边框）*/
+    border-bottom: 1px solid #d6dee7;
+    padding-top:97px; /*字与边框的边距*/
+    padding-bottom:97px;
+}
+
+/*列容器设置*/
+.game-row{
+    display:flex;
+    justify-content:space-between; /* 两端对齐，中间散开 */
+}
+/*每一列设置*/
+.game-column{
+    width:32%;
+    padding:0;
+    border:1px soild red;
+}
+/* 模块标题设置 */
+.section-title{
+    text-align: center; /*居中显示*/
+    margin-bottom:75px;
+}
+/* 模块内h2标题 */
+.section-title h2{
+    padding-top:10px;
+    font-size: 36px;
+}
+
+/* 近期游戏内容区域 */
+/*上部分的高度以及边距*/
+.recent-game-item .rgi-thumb{
+    height:204px;
+    padding:25px 28px; /*内边距 上下6 左右25*/
+}
+
+/*下部分样式*/
+.recent-game-item .rgi-content{
+    padding:34px 22px 20px;
+    background: #fff;
+    border:1px solid #d6dee7; /*四周边框*/
+    border-top:none; /*把盒子头顶上的那条线擦掉 只有左、右、下有边框*/
+    position:relative; /* 相对定位：身子动了，影子还在 */
+}
+/*标题样式*/
+.renect-game-item .rgi-content h5{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+/*评论样式*/
+.recent-game-item .rgi-content .comment{
+    font-size:12px;
+    color:#737373;
+}
+/*喜欢和收藏容器*/
+.recent-game-item .rgi-extra{
+    position: absolute; /*绝对定位*/
+    right:0;
+    bottom:0;
+    width:70px;
+}
+/*喜欢和收藏图片容器设置*/
+.recent-game-item .rgi-extra .rgi-star,
+.recent-game-item .rgi-extra .rgi-heart{
+    height:35px;
+    width:35px;
+    float:left;
+    display:block; /*和inline-block 相反*/
+    padding:6px 8px 0;
+}
+
+/*设置图片显示方式*/
+.img {
+    max-width:100%;
+    vertical-align: middle; /* vertical-align:调整同一行里，高矮不同的，怎么对齐。*/
+}
+
+.recent-game-item .rgi-extra .rgi-star{
+    background: #ffb320;
+}
+.recent-game-item .rgi-extra .rgi-heart{
+    background: #ff205f;
+}
+
+/*通用模块上下边距*/
+.spad { 
+    padding-top:97px;
+    padding-bottom: 97px;
+}
+
+/* 比赛模块 */
+.tournaments-section{
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat; /*浏览器样式 贴瓷砖自动铺满全屏*/
+}
+/* 标题标签设置 */
+.tournament-title{
+    display:inline-block;
+    padding:7px 25px;
+    font-size:12px;
+    font-weight: 500;
+    color:#fff;
+    background:#fb6e10;
+    margin-bottom: 10px;
+}
+/* 项目容器设置 */
+.tournament-row {
+    display: flex;
+    justify-content: space-between;
+}
+/* 每一项设置 */
+.tournament-item{
+    background: #252525;
+    width:48%;
+    margin-bottom: 20px;
+}
+
+/* 比赛标签设置 */
+.tournament-item .ti-notic {
+    display:inline-block;
+    padding: 8px 21px; /*内边距 上下8 左右21*/
+    font-size:12px;
+    font-weight:700;
+    color:#131313;
+    text-transform: uppercase; /*全部大写*/
+    background: #ffb320;
+}
+/* 比赛项容器设置 */
+.tournament-item .ti-content {
+    padding: 38px 24px;
+    display:flex;
+}
+/* 图片容器设置 */
+.tournament-item .ti-thumb {
+    width:168px;
+    height:178px;
+    background-size:cover;
+    background-position: center;
+}
+/* 赛事信息边距设置 */
+.tournament-item .ti-text {
+    padding-left:20px;
+}
+/* 比赛标题设置 */
+.tournament-item .ti-text h4 {
+    color:#ffb320;
+    margin-bottom: 20px; /*下面20px*/
+}
+/* 列表项目编号和下外边距设置 */
+.tournament-item .ti-text ul {
+    list-style: none;
+    margin-bottom:20px;
+}
+/* 比赛信息字体大小边距设置 */
+.tournament-item .ti-text ul li {
+    color:#fff;
+    font-size: 12px;
+    margin-bottom:6px;
+}
+/* 比赛信息颜色设置 */
+.tournament-item .ti-text ul li span {
+    color:#9a9a9a;
+}
+/* 奖品整体设置 */
+.tournament-item .ti-text p {
+    font-size:12px;
+    margin-bottom: 0;
+    color:#fff;
+}
+/* 奖品文字设置 */
+.tournament-item .ti-text p span {
+    font-weight: 500;
+    color:#ffb320;
+}
+
+/* 最近评价模块背景设置 */
+.review-section{
+    background-position:right top;
+}
+/* 最近评价模块背景设置 */
+.review-row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+
+/* 内容区域设置 */
+.review-item{
+    width:23%;
+    margin-bottom:30px;
+}
+/* 设置上部分的高度背景等内容 */
+.review-item .review-cover{
+    position:relative;
+    margin-bottom:15px;
+    height:345px;
+    background-size:cover;
+    background-position: center;
+}
+/* 设置顶部评分 */
+.review-item .review-cover .score {
+    position:absolute;
+    width:54px;
+    height:54px;
+    top:-27px;
+    left:26px;
+    padding-top: 15px;
+    font-size:18px;
+    font-weight:500;
+    color:#fff;
+    text-align:center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* 设置评分顶部颜色 */
+.review-item .review-cover .score.yellow {
+    background:#ffb320;
+}
+
+.review-item .review-cover .score.purple {
+    background: #696eae;
+}
+.review-item .review-cover .score.pink {
+    background: #ff20ae;
+}
+.review-item .review-cover .score.green {
+    background: #4eae60;
+}
+/* 设置文字居中 */
+.review-item .review-text {
+    text-align: center;
+}
+/* 游戏标题设置 */
+.review-item .review-text h5 {
+    margin-bottom:20px;
+    font-size:16px;
+}
+/*游戏评价设置*/
+.review-item .review-text p {
+    margin-bottom:0;
+    color:#878787;
+    font-size:14px;
+    line-height:2;
+}
+
+/* 页脚部分整体背景 */
+.footer-top-section{
+    background-image: url(../images/pattern.png);
+    background-repeat:repeat;
+    padding:72px 0;
+}
+/* 设置版心相对定位 */
+.footer-top-section .container {
+    position:relative;
+}
+/* 设置游戏角色位置 */
+.footer-top-bg {
+    position:absolute;
+    left:-30px;
+    bottom:-85px;
+    z-index:2;
+}
+/* 设置容器为Flex实现水平对齐 */
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+/* 设置LOGO容器 */
+.footer-logo {
+    width: 30%;
+    color:#fff;
+    font-size:large;
+}
+/* 设置LOGO位置 */
+.footer-logo img{
+    margin-bottom:35px;
+}
+/* 设置最新帖子和最新评论容器宽度及基础配置 */
+.footer-weight{
+    width: 30%;
+    padding: 40px 30px 7px;
+    background:#252525;
+    border:1px solid #4a4a4a;
+    height:500px;/*高度是为了看整体效果*/
+}
+
+/* 设置帖子标题 */
+.footer-weight .fw-title{
+    color:#fff;
+    margin-bottom: 40px;
+}
+/*设置帖子每一项的距离*/
+.latest-blog .lb-item {
+    margin-bottom:23px;
+    overflow: hidden; /*溢出控制*/
+}
+/*设置帖子图片区域大小*/
+.latest-blog .lb-item .lb-thumb {
+    width:97px;
+    height:97px;
+    float:left;
+}
+/* 设置帖子信息左内边距 */
+.latest-blog .lb-item .lb-content {
+    padding-left:110px;
+}
+/* 设置日期 */
+.latest-blog .lb-item .lb-content .lb-date{
+    font-size:12px;
+    color:#ffb320;
+    margin-bottom:8px;
+}
+/* 设置帖子标题 */
+.latest-blog .lb-item .lb-content p {
+    font-size:12px;
+    margin-bottom:5px;
+    color:#d3d3d3;
+}
+/* 设置作者字体 */
+.latest-blog .lb-item .lb-content .lb-author {
+    font-size:12px;
+    color:#d3d3d3;
+    opacity:0.45;
+}
+
+
+/* 评论区域间隔 */
+.top-comment .tc-item {
+    margin-bottom: 23px;
+    overflow:hidden; /*超出部分控制*/
+}
+/*评论区域图片设置*/
+.top-comment .tc-item .tc-thumb {
+    width:63px;
+    height:63px;
+    border-radius:50%; /*圆角控制*/
+    float:left;
+}
+/* 评论区域左侧设置 */
+.top-comment .tc-item .tc-content {
+    padding-left: 100px;
+}
+.top-comment .tc-item .tc-content p {
+    font-size:12px;
+    color:#d3d3d3;
+    margin-bottom:5px;
+}
+.top-comment .tc-item .tc-content p a {
+    color:#ff205f;
+}
+.top-comment .tc-item .tc-content p span {
+    color:#7a7a7a;
+}
+.top-comment .tc-item .tc-content .tc-date{
+    font-size:12px;
+    color:#ffb320;
+}
+
+/* 网站底部 */
+.footer-section {
+    padding:18px 0 16px;
+    overflow:hidden;
+    background: #252525;
+}
+/*设置底部容器为Flex布局*/
+.footer-section .container {
+    display:flex;
+    justify-content:space-between;
+}
+/* 设置取消项目符号 */
+.footer-menu{
+    list-style:none;
+}
+/*设置li为行内模式，使其横向排列*/
+.footer-menu li{
+    display:inline;
+}
+/* 设置a标签 */
+.footer-menu li a {
+    display:inline-block;
+    font-size:14px;
+    font-weight:500;
+    color:#aeaeae;
+    margin-left:30px;
+}
+/* 设置版权信息文字 */
+.copyright {
+    font-weight:500;
+    color:#aeaeae;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            /*内边距：内容距离边框的长度 顺时针：上，右，下，左*/
+            padding-top:10px;
+            padding-right:20px;
+            padding-bottom:30px;
+            padding-left:40px;
+        
+             /*外边距：边框到其他元素主机间的距离 顺时针：上，右，下，左*/
+           /*margin：10px 20px 30px 40px*/
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            /*边框     边框宽度、边框线性、边框的颜色  solid实线 dashed虚线  dotted点线  double双实线*/
+            border:1px solid red ;
+            /*边框的圆角*/
+            border-radius:10px;
+        }
+        .shadow{
+            width: 240px;
+            height: 274px;
+            border:1px solid #ccc;
+            border-radius:10px;
+            /* 盒子阴影 水平阴影位置，垂直阴影位置，阴影的模糊半径，扩展半径 */
+            box-shadow:10px 3px 23px 0px #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">123</div>
+    <!-- 添加一张图片，边框为5像素实线的黑色边框，圆角为5像素，内边距为10px，外边距为20px -->
+    <img src="https://www.wzln.top/beijing.jpg" alt="背景" style="border-radius:5px; border:5px solid black; padding:10px; margin:20px;width:600px;height:600px">
+    <div class="shadow">
+        123
+        <hr>
+        <img class="shadow" src="https://www.wzln.top/beijing.jpg" style="width:200px;height:200px;margin-left: 20px;">
+    </div>
+</body>
+</html>

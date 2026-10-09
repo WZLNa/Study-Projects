@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+  <meta charset="UTF-8">
+  <title>2.5 定位</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .father{
+        border:1px solid red;
+        border-radius:10px;
+        box-shadow:10px 3px 23px 0px #ccc;
+    }
+    .father div{
+        width:100px;
+        height:50px;
+        border-radius:10px;
+        box-shadow:10px 3px 13px 0px #ccc;
+    }
+    .div1{
+        background-color: pink;
+        /* 静态定位，设置偏移量不起作用，静态定位就是元素在标准流中的默认位置 */
+        position:static;
+        left:100px;
+    }
+    .div2{
+        background-color:blue;
+        /* 相对定位 */
+        position:relative;
+        left:100px;
+        top:100px;
+    }
+    .div3{
+        background-color: green;
+        /* 绝对定位 */
+        position:relative;
+        left:100px;
+    }
+    .div4{
+        background-color: purple;
+        position:fixed;
+        top:225px;
+        left: 220px;
+    }
+  </style>
+</head>
+<!-- 定位：
+ 定位方式设置：position   static、relative absolute fixed
+ 偏移量：相对它的参照物进行的位置设置   top  bottom left right
+1.静态定位  position:static(默认定位方式)
+    不需要设置，默认位置
+2.相对定位：以自身原来的位置为参照
+    top 如果为正值距离自身原来位置向下挪动
+    left 如果为正值距离自身原来位置向右挪动
+    bottom 如果为正值距离自身原来位置向上挪动
+    righ 如果为正值距离自身原来位置向左挪动
+3.绝对定位
+    参照物：当父元素没有设置定位的时候，以浏览器窗口为参照
+    当父元素设置了定位，则以父元素为参照。
+4.固定定位
+    参照物：浏览器窗口。无论页面怎么滚动，他都固定
+    设置固定定位后，不会保留原有空间。
+5.定位顺序
+z-index属性   值大的元素在上面，值小的元素在下面,默认值为0，只对定位的元素有效。
+6.常用的定位方式：父元素绝对定位，子元素相对定位
+    如果父元素不需要设置定位，但是又希望子元素能够以父元素为参照设置定位，通常会讲父元素设置为没有偏移量的相对定位，子元素设置绝对定位，将会以父元素为参照，设置偏移量。
+ -->
+
+<body>
+    <h1>2.5 定位</h1>
+    <div class="father">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>网页结束</p>
+    </div>
+</body>
+</html>

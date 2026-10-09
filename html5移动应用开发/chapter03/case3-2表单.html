@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>3.2 表单</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <!-- 表单是用来收集数据的
+         表单分三部分：
+         form标签；action(发送数据的地址)
+                    method(收集的数据传输方式) get:会将传输的数据附着在地址的后面，以查询字符串的方式传输，不安全
+                                                post:会以请求体的方式传输，相对安全
+                    name (给form起名字的,用于区分多个form)
+         
+         表单域：行内块元素
+            如果让数据能够正确传输，一定要给每一个表单域 添加name属性
+                单行文本输入框
+                密码框
+                单选框（相同name表示是一组）
+                复选框（相同name表示是一组）
+                按钮：提交按钮 重置按钮 一般按钮
+         -->
+         <form action="case3-1列表.html" method="get" name="form1">
+            用户名：
+            <input type="text" name="username"><br>
+
+            密码：
+            <input type="password" name="password"><br>
+
+            性别：
+            <input type="radio" name="gender" id="">男
+            <input type="radio" name="gender" id="">女
+            <br>
+
+            复选框：爱好
+            <input type="checkbox" name="isCheck">游泳
+            <input type="checkbox" name="isCheck">爬山
+            <input type="checkbox" name="isCheck">郊游
+            <br>
+            
+            上传头像
+            <input type="file" name="avatar" id=""> <br>
+
+            按钮：提交按钮
+            <input type="submit" value="提交"> <br>
+
+            按钮：重置按钮
+            <input type="reset" value="重置"> <br>
+
+            按钮：一般按钮
+            <input type="button" value="一般按钮">
+            
+         </form>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>

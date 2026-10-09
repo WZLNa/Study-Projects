@@ -1,0 +1,29 @@
+<!-- 
+display: grid;
+            /*用占父元素百分比的形式划分列 */
+            grid-template-columns:20% 20% 20% 20% 20% ;
+             /*用占父元素百分比的形式通过repeat()划分列 */
+            /* grid-template-columns:repeat(5,20%) ; */
+             /*用等分父元素的形式表示每个占几分 */
+            /* grid-template-columns: repeat(5,1fr); */
+            /* 用自适应的形式，最小宽度为40px，最大宽度为1fr  */
+            /* grid-template-columns: repeat(auto-fill,minmax(40px,1fr)); */
+            grid-template-rows: repeat(2,50%);
+            /* 间距 */
+            gap:1px; -->
+
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h1{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color:white">123</h1>
+    </body>
+</html>
