@@ -30,7 +30,7 @@ public class ForDemo7 {
 
         for (int i = 0; i < num; i++) {
 
-            if (a % 2 == 0) {
+            if (a % 2 == 0) {  //或者int i改成1,去掉a
                 result = result - a; //当是偶数的时候 就执行减操作
                 a++; //变成奇数
             } else {
