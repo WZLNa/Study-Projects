@@ -25,8 +25,9 @@ public class IfDemo10 {
 
         if ( paid > 0 ){
             if (paid < 1000 ){
+                balance = paid + present ;
                 System.out.println( "充值成功 赠送金额" + present + "现在余额" + balance );
-            } else if ( paid < 2000 ){ // 小于1000不会执行到这里 则为 1000. - x - .2000
+            } else if ( paid < 2000 ){ // 小于1000不会执行到这里 则为 [1000 -x- 2000)
                 present = 200 ;
                 balance = paid + present ;
                 System.out.println( "充值成功 赠送金额" + present + "现在余额" + balance );
